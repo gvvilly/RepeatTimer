@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal" android:background="@color/bg" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:text="REPEAT TIMER" android:textColor="@color/text_secondary" android:textSize="12sp" android:letterSpacing="0.18"/>
+    <TextView android:id="@+id/timerText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="00:04:00" android:textColor="@color/text_primary" android:textSize="54sp" android:includeFontPadding="false"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginTop="24dp" android:gravity="center" android:background="@color/panel" android:orientation="horizontal" android:padding="10dp">
+        <NumberPicker android:id="@+id/hourPicker" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:layout_width="24dp" android:layout_height="match_parent" android:gravity="center" android:text=":" android:textColor="@color/text_secondary" android:textSize="28sp"/>
+        <NumberPicker android:id="@+id/minutePicker" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:layout_width="24dp" android:layout_height="match_parent" android:gravity="center" android:text=":" android:textColor="@color/text_secondary" android:textSize="28sp"/>
+        <NumberPicker android:id="@+id/secondPicker" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:id="@+id/statusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="준비됨" android:textColor="@color/text_secondary" android:textSize="14sp"/>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:gravity="center" android:orientation="horizontal" android:layout_marginBottom="28dp">
+        <Button android:id="@+id/startPauseButton" android:layout_width="0dp" android:layout_height="56dp" android:layout_weight="1" android:layout_marginEnd="8dp" android:text="시작" android:textSize="16sp" android:textColor="#111315" android:background="@drawable/rounded_accent"/>
+        <Button android:id="@+id/stopButton" android:layout_width="0dp" android:layout_height="56dp" android:layout_weight="1" android:layout_marginStart="8dp" android:text="중지" android:textSize="16sp" android:textColor="@color/text_primary" android:background="@drawable/rounded_button"/>
+    </LinearLayout>
+</LinearLayout>
